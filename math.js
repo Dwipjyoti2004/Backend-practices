@@ -30,3 +30,17 @@ module.exports = obj; //here it returns an object
   g: g,
   PI: PI,
 }; this is also valid*/
+
+/*the below systax is also valid cause module.exports is itself an object
+module.exports.sum = (a, b) => a + b;
+module.exports.mul = (a, b) => a * b;
+module.exports.g = 9.8;
+module.exports.PI = 3.14; */
+
+/*the below systax is also valid 
+exports.sum = (a, b) => a + b;
+exports.mul = (a, b) => a * b;
+exports.g = 9.8;
+exports.PI = 3.14; */
+
+//exports = 5; but this will give error cause js then treat this exports as an normal variable not as the exports of module.exports. exports is treated as of module.exports whenever exports is treated as an object and different functions and variables/values are added within that obj.
